@@ -6,7 +6,7 @@ else
 	filename="${1%.c}.bin"
 fi
 
-gcc "$1" -o "$filename"
+gcc "$1" -o "$filename" || exit 1
 
 if [[ ! -x "$filename" ]];then
 	sudo chmod +x "$filename"

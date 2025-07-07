@@ -1,8 +1,12 @@
 /*
 =====================  ASSIGNMENT  =====================
 
-Write a program that writes out exactly this text:
-James Bond \ "Agent 007" \ # 150% insurance # / Ltd. with unlimited liability
+Write a program that reads a character from input and
+prints the character with a value one higher in the ASCII table.
+
+Example:
+Input:  A
+Output: B
 
 =========================================================
 */
@@ -10,3 +14,9 @@ James Bond \ "Agent 007" \ # 150% insurance # / Ltd. with unlimited liability
 #include <stdio.h>
 
 int main() {
+	printf("%s","Input:  ");	
+	int c = getchar();
+	c++;
+	printf("%s %c\n","Output:",c);
+	return 0;
+}
