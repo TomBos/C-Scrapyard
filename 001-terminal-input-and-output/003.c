@@ -15,14 +15,23 @@ Output: 7Fh
 #include <stdio.h>
 
 int main() {
-	int c, i = 0;
+	int c;
+	int i = 0;
+	int dec = 0;
+
+	printf("%s","Input:  ");
 	while ((c = getchar()) != EOF && c != '\n' && i < 3) {
 		if (c >= '0' && c <= '9') {
-			printf("%s", "in range");
+			dec = dec * 10 + (c - '0');	
 			i++;
 		}
 	}
 
+	if (dec > 255) {
+		dec = 255;
+	}
+
+	printf("Output: %Xh\n", dec);
 	return 0;
 }
 
