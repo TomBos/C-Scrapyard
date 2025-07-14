@@ -17,13 +17,15 @@ int main() {
 	int dec = 0;
 
 	printf("%s","Input:  Enter the price without tax: ");
-	while ((c = getchar()) != EOF && c != '\n' && i < 15) {
+	while ((c = getchar()) != EOF && c != '\n' && i < 8) {
 		if (c >= '0' && c <= '9') {
 			dec = dec * 10 + (c - '0');
 			i++;
 		}
 	}
 
-	printf("Output: %d\n", dec);
+	dec = (dec*125)/100;
+
+	printf("Output: Sales price with tax (25%): %d\n", dec);
 	return 0;
 }
