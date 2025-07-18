@@ -8,3 +8,27 @@ Also verify the correctness by manual calculation.
 =========================================================
 */
 
+#include <stdio.h>
+
+int main() {
+	int a = 2, c = 1, e = 4;
+
+	// Post increment, a stays same
+	// a = 2;
+
+	// Pre increment, c increases by 1
+	// c = 2;
+
+	// Pre decrement, e decreases by 1
+	// e = 3;
+
+	// Result: 
+	// res = a++ / ++c * --e	
+	// res = 2 / 2 * 3
+	// res = 1 * 3
+	// res = 3
+
+	printf("Output: %d\n", a++ / ++c * --e);
+	return 0;
+}
+
