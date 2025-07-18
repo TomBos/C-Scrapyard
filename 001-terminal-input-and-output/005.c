@@ -15,7 +15,7 @@ int main() {
 
 	// Parsing length
 	int pl = 1;
-	int l = 0, w = 0;
+	int l = 0, w = 0, res = 0;
 
 	printf("%s","Input:  Enter the length and width: ");
 	while ((c = getchar()) != EOF && c != '\n') {
@@ -33,7 +33,8 @@ int main() {
 		}
 	}
 
-	printf("Output: Rectangle with length %d and width %d has area %d\n", l, w, l * w);
+	res = l * w;
+	printf("Output: Rectangle with length %d and width %d has area %d\n", l, w, res);
 	return 0;
 }
 

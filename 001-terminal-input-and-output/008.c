@@ -8,3 +8,21 @@ Also verify the correctness by manual calculation.
 =========================================================
 */
 
+#include <stdio.h>
+
+int main() {
+	int b = 2, e = 4, res = 0;
+
+	// Pre decrement, e decreases by 1
+	// e = 3;
+
+	// Result: 
+	// res = -b - --e	
+	// res = -2 - 3
+	// res = -5
+
+	res = -b - --e;
+	printf("Output: %d\n", res);
+	return 0;
+}
+

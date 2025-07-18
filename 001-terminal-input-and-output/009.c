@@ -8,3 +8,25 @@ Also verify the correctness by manual calculation.
 =========================================================
 */
 
+
+#include <stdio.h>
+
+int main() {
+	int a = 2, e = 4, res = 0;
+
+	// Pre increment, a increases by 1
+	// a = 3;
+
+	// Pre decrement, e decreases by 1
+	// e = 3;
+
+	// Result:
+	// res = ++a - --e
+	// res = 3 - 3
+	// res = 0
+
+	res = ++a - --e;
+	printf("Output: %d\n", vim);
+	return 0;
+}
+

@@ -11,7 +11,7 @@ Also verify the correctness by manual calculation.
 #include <stdio.h>
 
 int main() {
-	int a = 2, c = 1, e = 4;
+	int a = 2, c = 1, e = 4, res = 0;
 
 	// Post increment, a stays same
 	// a = 2;
@@ -28,7 +28,8 @@ int main() {
 	// res = 1 * 3
 	// res = 3
 
-	printf("Output: %d\n", a++ / ++c * --e);
+	res = a++ / ++c * --e;
+	printf("Output: %d\n", res);
 	return 0;
 }
 

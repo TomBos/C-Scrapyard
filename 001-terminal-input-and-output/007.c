@@ -11,7 +11,7 @@ Also verify the correctness by manual calculation.
 #include <stdio.h>
 
 int main() {
-	int a = 2, b = 2, c = 1;
+	int a = 2, b = 2, c = 1, res = 0;
 
 	// Pre decrement, b decreases by 1
 	// b = 1;
@@ -25,7 +25,8 @@ int main() {
 	// res = 1 - 2
 	// res = -1
 
-	printf("Output: %d\n", --b * c++ - a);
+	res = --b * c++ - a;
+	printf("Output: %d\n", res);
 	return 0;
 }
 
