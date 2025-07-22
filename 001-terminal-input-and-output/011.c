@@ -21,6 +21,9 @@ int main() {
 	// res = a = 2 % ( b = d = ( 1 + (4/2) ))
 	// res = a = 2 % ( b = d = ( 1 + 2 ))
 	// res = a = 2 % ( b = d = 3 )
+	// res = a = 2 % 3
+	// res = a = 2
+	// res = 2
 
 	res = a %= b = d = 1 + e / 2;
 	printf("Output: %d\n", res);
